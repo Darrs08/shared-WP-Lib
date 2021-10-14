@@ -5,7 +5,7 @@ def call(Map stageParams = [awsRegion: "us-east-1"]){
           stack: stageParams.stackName, 
           changeSet:'my-change-set', 
           tags:['Environment='+stageParams.env],
-          url:'https://'+ stageParams.bucketName + '.s3.amazonaws.com/'+ stageParams.stackFileName
+          url:'https://'+ stageParams.bucketName +'.s3.amazonaws.com/'+ stageParams.stackFileName
         )
 	cfnExecuteChangeSet(
           stack: stageParams.stackName, 
