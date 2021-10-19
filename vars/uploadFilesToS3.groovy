@@ -5,7 +5,7 @@ def call(Map stageParams = [Region: "us-east-1",  bucketName: "testbucket-darren
             workingDir: stageParams.workingDir,
             includePathPattern: stageParams.stackFileName,
             bucket: stageParams.bucketName,
-            path: stageParams.s3Path
+            //path: stageParams.s3Path
         )
     }
 }
